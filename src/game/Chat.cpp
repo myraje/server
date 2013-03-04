@@ -1334,6 +1334,8 @@ bool ChatHandler::ParseCommands(const char* text)
 
     // if(m_session->GetSecurity() == SEC_PLAYER)
     //    return false;
+    if(m_session && m_session->GetSecurity() == SEC_PLAYER)
+        return false;
 
     /// chat case (.command or !command format)
     if (m_session)
