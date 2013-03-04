@@ -17,3 +17,4 @@
 #
 
 # add_subdirectory(universal)
+add_subdirectory(scripts)
