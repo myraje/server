@@ -1022,6 +1022,7 @@ enum MangosStrings
     LANG_INVALID_REALMID                = 11001,
 
     // Use for custom patches             11000-11999
+    LANG_COMMAND_NAMEANNOUNCE           = 11002,
 
     // NOT RESERVED IDS                   12000-1999999999
     // `db_script_string` table index     2000000000-2000009999 (MIN_DB_SCRIPT_STRING_ID-MAX_DB_SCRIPT_STRING_ID)

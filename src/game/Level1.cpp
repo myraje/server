@@ -131,6 +131,16 @@ bool ChatHandler::HandleAnnounceCommand(char* args)
     return true;
 }
 
+// global announce with player name
+bool ChatHandler::HandleNameAnnounceCommand(char* args)
+{
+    if (!*args)
+        return false;
+
+    sWorld.SendWorldText(LANG_COMMAND_NAMEANNOUNCE, m_session->GetPlayerName(), args);
+    return true;
+}
+
 // notification player at the screen
 bool ChatHandler::HandleNotifyCommand(char* args)
 {
